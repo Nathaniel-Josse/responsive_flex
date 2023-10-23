@@ -1,0 +1,44 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: #ffc812;
+    height: 100px;
+}
+.nav{
+    background: #d38900;
+    height: 100px;
+}
+.content{
+    background: rgb(138, 188, 63);
+    height:300px;
+}
+.content2{
+    background: rgb(138, 188, 63);
+    height:300px;
+}
+.footer{
+    background: #56c7ff;
+    height: 150px;
+}
+p{
+    font-size: 50px;
+    text-align: center;
+    color:black;
+}
+
+@media (min-width: 768px){
+    .containerContent{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav{
+        width:50%;
+        height:300px;
+    }
+    .content{
+        width:50%;
+    }
+}
