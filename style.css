@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
 }
-.header{
+header{
     background: #ffc812;
     height: 100px;
 }
-.nav{
+nav{
     background: #d38900;
     height: 100px;
 }
@@ -19,22 +19,33 @@
     background: rgb(138, 188, 63);
     height:300px;
 }
-.footer{
+footer{
     background: #56c7ff;
     height: 150px;
 }
-p{
+h1{
     font-size: 50px;
     text-align: center;
     color:black;
 }
+p{
+    font-size: 20px;
+    text-align: center;
+    color:black;
+    margin-inline:auto;
+}
 
+@media (min-width: 560px){
+    p{
+        width: 80%;
+    }
+}
 @media (min-width: 768px){
     .containerContent{
         display: flex;
         flex-direction: row;
     }
-    .nav{
+    nav{
         width:50%;
         height:300px;
     }
